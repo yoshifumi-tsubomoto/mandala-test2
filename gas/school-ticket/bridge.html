@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <style>
+    body { font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", sans-serif; margin: 0; background: #f7f7f5; color: #1f2421; }
+    .top { background: #1f8a5b; color: #fff; padding: 12px 16px; font-size: 18px; font-weight: bold; }
+    .card { background: #fff; border: 1px solid #d9dcd8; border-radius: 12px; padding: 20px; margin: 24px 16px; max-width: 520px; line-height: 1.7; }
+    .btn { display: inline-block; background: #1f8a5b; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-size: 17px; font-weight: bold; margin-top: 8px; }
+    .ng { color: #c0392b; font-weight: bold; }
+    .note { color: #5d6661; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="top">マンダラ発想法</div>
+  <div class="card">
+  <? if (error) { ?>
+    <p class="ng"><?= error ?></p>
+  <? } else { ?>
+    <p>学校のアカウントで確認できました。<? if (isTeacher) { ?>（先生として入ります）<? } ?></p>
+    <p><a class="btn" href="<?= nextUrl ?>" target="_top">マンダラ発想法へ進む</a></p>
+    <p class="note">2分以内にボタンを押してください。<br>
+    画面の上に「このアプリケーションは Google Apps Script のユーザーによって作成されたものです」という帯が出ることがありますが、そのままで大丈夫です（帯の中のリンクは押さないでください）。</p>
+  <? } ?>
+  </div>
+</body>
+</html>

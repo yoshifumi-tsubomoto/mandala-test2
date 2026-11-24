@@ -1,0 +1,26 @@
+# 許可リスト方式：まず全部を記録しないにして、記録してよいものだけを「!」で書き足す
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/導入手順.md
+!/app/
+!/supabase/
+!/gas/
+
+# 許可したフォルダの中でも、記録しないもの
+node_modules/
+dist/
+*.local
+.env*
+.clasp.json
+*.pdf
+*.docx
+*.xlsx
+*.xls
+*.csv
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.mandala.json
